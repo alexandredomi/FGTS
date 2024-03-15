@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     color: #135f0d;
-    
+
 }
 
 .logo{
@@ -169,4 +169,78 @@ main{
 }
 .img-perguntas{
     width: 50%;
+}
+
+/* desiggner mobile*/
+
+@media screen and (max-width: 960px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .center-header{
+        width: 90%;
+        color: #135f0d;
+    }
+    .lado-esquerdo{
+        width: 100%;
+        height: 500px;
+    }
+    .lado-esquerdo h2{
+        display: none;
+    }
+    .center-header .lista-header{
+        display: none;
+    }
+    .botao-header{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+    .linha-hamburger{
+        width: 30px;
+        background-color: #135f0d;
+        height: 4px;
+        border-radius: 2px;
+    }
+    main{
+        width: 90%;
+        color: #135f0d;
+    }
+    .lado-direito{
+        display: none;
+    }
+    .center-vantagens{
+        padding: 40px 0px;
+    }
+    .titulo-vantagens h2{
+        font-size: 35px;
+    }
+    .cards-vantagens{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .cards-vantagens .card{
+        width: 80%;
+    }
+    .center-perguntas{
+        gap: 30px;
+    }
+    .titulo-perguntas h2{
+        font-size: 35px;
+    }
+    .todas-perguntas{
+        width: 100%;
+    }
+    .img-perguntas{
+        display: none;
+    }
 }
