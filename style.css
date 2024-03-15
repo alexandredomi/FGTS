@@ -153,13 +153,18 @@ main{
     margin: 0px auto;
 }
 .center-perguntas{
+    display: flex;
+    flex-wrap: wrap;
     margin: 0px auto;
+    padding: 30px 0px;
 }
 .titulo-perguntas{
     width: 100%;
     text-align: center;
 }
 .todas-perguntas{
+    display: flex;
+    align-items: center;
     width: 50%;
 }
 .img-perguntas{
