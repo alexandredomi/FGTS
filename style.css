@@ -103,7 +103,6 @@ main{
     margin: 20px 0px;
 }
 .lado-esquerdo button{
-    background-color: rgb(255, 166, 0);
     border: none;
     height: 35px;
     color: #135f0d;
@@ -173,7 +172,7 @@ main{
 
 /* desiggner mobile*/
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1150px){
     header{
         width: 100%;
         display: flex;
@@ -183,13 +182,6 @@ main{
     .center-header{
         width: 90%;
         color: #135f0d;
-    }
-    .lado-esquerdo{
-        width: 100%;
-        height: 500px;
-    }
-    .lado-esquerdo h2{
-        display: none;
     }
     .center-header .lista-header{
         display: none;
@@ -213,8 +205,25 @@ main{
         width: 90%;
         color: #135f0d;
     }
+    .center-home{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lado-esquerdo{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .lado-esquerdo h2{
+        margin: 15px 0px;
+        
+    }
     .lado-direito{
-        display: none;
+        width: 100%;
+    }
+    .lado-direito img{
+        width: 100%;
     }
     .center-vantagens{
         padding: 40px 0px;
