@@ -15,12 +15,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.lista-header{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    align-items: center;
-}
+
 .lista-header a{
     text-decoration: none;
     color: white;
@@ -31,6 +26,18 @@
     text-decoration: none;
     color: #FFC300;
     transition: 0,4s;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0px;
 }
 .botao-header button{
     padding: 5px 20px;
@@ -154,13 +161,36 @@
     .hamburger{
         display: flex;
         flex-direction: column;
-        gap: 5px;    
+        gap: 5px; 
+        cursor: pointer;  
     }
     .linha-hamburger{
         width: 30px;
         height: 4px;
         border-radius: 3px;
         background-color: #FFD60A;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #FFC300;
+        color: #003566;
+        clip-path: circle(100px at 90% -15%);
+        transform: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+    .nav.active .nav-list{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .hero{
+        height: calc(100vh - 70px);
     }
     .center-home{
         width: 90%;
@@ -189,7 +219,6 @@
     }
     .titulo-perguntas{
         width: 100%;
-        pad
     }
     .todas-perguntas{
         width: 100%;
