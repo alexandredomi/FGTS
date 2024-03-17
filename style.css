@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+.header{
+    position: fixed;
+    width: 100%;
+}
+#home ,#center-vantagens ,#center-perguntas{
+    padding-top: 5.4rem;
+}
 .color-header{
     background-color: #003566;
     color: white;
@@ -53,7 +60,7 @@
     border: #003566 solid 1px;
     transition: 0.3s;
 }
-.hamburger{
+.botao-header2{
     display: none;
 }
 .home-color{
@@ -120,26 +127,19 @@
     border: solid 1px rgb(141, 141, 141);
     border-radius: 10px;
 } 
-.center-perguntas{
-    width: 80%;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-}
 .titulo-perguntas{
     text-align: center;
+    width: 100%;
     margin-top: 40px;
 }
-.titulo-perguntas{
-    width: 100%;
-}
+
 .todas-perguntas{
     width: 50%;
     display: flex;
     align-items: center;
 }
 .img-perguntas{
-    width: 40%;
+    width: 50%;
 }
 
 /*celular 960px*/
@@ -153,16 +153,23 @@
         display: none;
     }
     .center-header .logo h1{
-        color: #FFD60A;
+        color: #ffffff;
+        font-size: 2rem;
     }
-    .botao-header button{
+    .botao-header-desck button{
         display: none;
+    }
+    .dropdown-toggle{
+        background-color: #FFD60A;
     }
     .hamburger{
         display: flex;
         flex-direction: column;
         gap: 5px; 
         cursor: pointer;  
+    }
+    .{
+        display: block;
     }
     .linha-hamburger{
         width: 30px;
@@ -177,20 +184,6 @@
         width: 100%;
         background-color: #FFC300;
         color: #003566;
-        clip-path: circle(100px at 90% -15%);
-        transform: 1s ease-out;
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        pointer-events: none;
-    }
-    .nav.active .nav-list{
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-    }
-    .hero{
-        height: calc(100vh - 70px);
     }
     .center-home{
         width: 90%;
@@ -207,7 +200,7 @@
     .lado-direito{
         width: 100%;
     }
-    .center-vantagens{
+    #center-vantagens{
         width: 90%;
         margin: 0px auto;
     }
