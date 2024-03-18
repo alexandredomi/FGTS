@@ -60,7 +60,7 @@
     border: #003566 solid 1px;
     transition: 0.3s;
 }
-.botao-header2{
+.dropleft .btn{
     display: none;
 }
 .home-color{
@@ -132,7 +132,9 @@
     width: 100%;
     margin-top: 40px;
 }
-
+#center-perguntas{
+    padding-bottom: 80px;
+}
 .todas-perguntas{
     width: 50%;
     display: flex;
@@ -168,9 +170,6 @@
         gap: 5px; 
         cursor: pointer;  
     }
-    .{
-        display: block;
-    }
     .linha-hamburger{
         width: 30px;
         height: 4px;
@@ -184,6 +183,9 @@
         width: 100%;
         background-color: #FFC300;
         color: #003566;
+    }
+    .dropleft .btn{
+        display: block;
     }
     .center-home{
         width: 90%;
