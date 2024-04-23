@@ -5,16 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doces da Mumu</title>
   <link rel="shortcut icon" href="imagens/icons8-brigadeiro-color-16.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    
+    <div class="container">
+      <div class="logo">Docês da mumu</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
   </header>
   <main>
-
+    <section id="home">
+      <div class="text-home">
+        <p>what would you</p>
+        <span>like to ordet</span>
+        <p>today?</p>
+      </div>
+      <div class="img-home">
+        <div class="slogam">
+          <div class="slo-esq">
+            <span>50% OFF</span>
+            <p>dicta repllends perferdis?</p>
+            <button>Order on</button>
+          </div>
+          <div class="slo-dir">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
   </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('.nav-links li');
+  
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+  
+      // Burger Animation
+      burger.classList.toggle('toggle');
+    });
+  
+    // Fechar o menu ao clicar em qualquer lugar da tela
+    document.addEventListener('click', function(event) {
+      const isClickInsideNav = nav.contains(event.target);
+      const isClickInsideBurger = burger.contains(event.target);
+      if (!isClickInsideNav && !isClickInsideBurger) {
+        nav.classList.remove('nav-active');
+        burger.classList.remove('toggle');
+      }
+    });
+  </script>
 </body>
 </html>
