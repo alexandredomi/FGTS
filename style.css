@@ -79,9 +79,8 @@ body{
   /*-------------- fim header ------------*/
   #home{
     width: 100%;
-    height: 100vh;
 
-    padding: 50px 20px;
+    padding: 50px 20px 20px 20px;
 
     color: var(--cor-cinza);
   }
@@ -129,6 +128,33 @@ body{
     top: -30px;
     filter: drop-shadow(5px 10px 5px #6e6e6e);
   }
+  #categorias{
+    color: var(--cor-cinza);
+    font-size: 22px;
+    padding: 0px 20px;
+    
+  }
+  #categorias .atalhos-categorias{
+    display: flex;    
+    gap: 15px;
+    padding: 15px 0px;
+  }
+  #categorias .atalhos-categorias .conteudo{
+        width: 130px;
+        height: 150px;
+        border: solid 1px var(--cor-cinza);
+        border-radius: 20px;
+        padding: 4px;
+  }
+  #categorias .atalhos-categorias .conteudo h3{
+    color: var(--cor-branca);
+    font-size: 22px;
+}
+#categorias .atalhos-categorias .conteudo p{
+    color: var(--cor-branca);
+    font-size: 18px;
+}
+  /* ----------fim home --------- */
   @media screen and (max-width: 768px) {
     nav {
       display: none;
